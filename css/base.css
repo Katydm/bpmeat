@@ -1,0 +1,116 @@
+@font-face {
+  font-family: SF-Compact-Display-Regular; /*这里是说明调用来的字体名字*/
+  src: url("font/SF-Compact-Display-Regular.otf"); /*这里是字体文件路径*/
+}
+body,html{
+  font-family: SF-Compact-Display-Regular;
+
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i {
+	font-weight: 100;
+	font-style: normal;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+
+}
+textarea,input{
+	outline: none;
+	border: none;
+  background: transparent;
+}
+a {
+	color: white;
+	text-decoration: none;
+	outline: 0;
+	display: block;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC1hw-YxY1bFfyoftLFBzprxQ1A3rUhEK4&sensor=false" charset="utf-8"></script>
+  </head>
+  <body>
+<div class="body_wrap">
+  <div class="header_wrap"><!-- 头部开始 -->
+    <div class="header_content">
+      <div class="logo_wrap">
+        <img src="img/logomin.jpg" alt="">
+      </div>
+      <p>BUTCHER’S PREMIUM MEATS</p>
+      <div class="search_wrap">
+        <input type="text" name="" value="" placeholder="item no./key word">
+        <a href="#"><i style="background:url(img/magnifier.png)no-repeat"></i></a>
+      </div>
+    </div>
+  </div><!-- 头部结束 -->
+<!--  banner开始-->
+  <div class="banner_wrap" style="height:300px;">
+    <div class="nav_wrap">
+      <ul>
+        <li><a href="index.html"> HOME</a></li>
+        <li><a href="about_us.html"  >ABOUT US</a></li>
+        <li><a href="products.html" >PRODUCTS</a></li>
+        <li><a href="contact_us.html" class="active">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="banner_list">
+      <!-- <ul>
+        <li><img src="" alt=""> </li>
+        <li><img src="" alt=""> </li>
+        <li><img src="" alt=""> </li>
+        <li><img src="" alt=""> </li>
+      </ul> -->
+      <img src="img/contact_banner.jpg" alt="">
+      <p>CONTACT US</p>
+    </div>
+  </div>
+<!--  banner结束-->
+<!-- main中间部分开始 -->
+<div class="products_choose_wrap">
+  <div class="contact_us_wrap" >
+    <form class="" action="" method="post">
+    <div class="contact_us_input">
+      <p>Name</p>
+      <input type="text" name="" value="">
+      <p>Email/Phone</p>
+      <input type="text" name="" value="">
+      <p>Subject</p>
+      <input type="text" name="" value="">
+      <p>Message</p>
+      <textarea name="name" rows="8" cols="80"></textarea>
+    </div>
+    <input type="submit" name="" value="SEND" class="submit_button">
+    </form>
+    <div class="contact_us_logo">
+      <div>
+        <img src="img/logobig.jpg" alt="">
+      </div>
+      <p>info@bpmeat.com.au <br>+612 8540 7883 <br>Suite 4, level 7 <br>377-383 Sussex st <br>Sydney NSW 2000 Australia</p>
+    </div>
+  </div>
+  <div id="google_maps_wrap">
+
+  </div>
+</div>
+<!--  main中间部分结束-->
+
+<!--  footer开始-->
+<div class="footer_wrap">
+  <div class="footer_content">
+  <div class="footer_logo">
+    <img src="img/logomin.jpg" alt="">
+  </div>
+  <ul class="footer_nav_list">
+    <li>
+      <div class="footer_nav_list_content">
+        <p >INFORMATION</p>
+        <a href="#">ADDRESS</a>
+        <a href="#">Suite 4, level 7  <br/>
+           377-383 Sussex st<br/>
+            Sydney NSW 2000<br/>
+            Tel: +612 8540 7883</a>
+      </div>
+      <div class="footer_nav_list_content">
+        <p></p>
+        <a href="#">EMAIL</a>
+        <a href="#">info@bpmeat.com.au</a>
+      </div>
+      <div class="footer_nav_list_content">
+        <p></p>
+        <a href="#">ENQUIRY</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </li>
+    <li>
+      <div class="footer_nav_list_content">
+        <p>DISCOVER</p>
+        <a href="#" >About us</a>
+      </div>
+      <div class="footer_nav_list_content">
+        <p></p>
+        <a href="#" >Our Products</a>
+      </div>
+      <div class="footer_nav_list_content">
+        <p></p>
+        <a href="#"  >Privacy Policy</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+<!-- footer结束 -->
+
+</div>
+<script type="text/javascript">
+var myCenter=new google.maps.LatLng(-33.877268,151.204406);
+function initialize()
+{
+    var mapProp = {
+        center:myCenter,
+        zoom:20,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("google_maps_wrap"), mapProp);
+    var marker=new google.maps.Marker({
+        position:myCenter,
+    });
+    marker.setMap(map);
+}
+
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+  </body>
+</html>
